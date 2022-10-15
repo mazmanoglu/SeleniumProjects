@@ -12,6 +12,12 @@ public class C05_DriverManageMethods {
         WebDriver driver = new ChromeDriver();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().window().maximize();
+
+        // yukaridakileri genelde her seferinde yazariz
+        // bazi web elementleri maximize olmadigi durumlarda gorulemeyebilir, bu yuzden tam ekran yapariz.
+
+
         /*
         Waits method will be explained further.
         Implicitly wait, driverin aradigi elementleri bulabilmesi icin kendisine verdigimiz arastirma suresidir
